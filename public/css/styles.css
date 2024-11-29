@@ -1,0 +1,24 @@
+/* Your CSS styles here */
+.game-board {
+    position: relative;
+    display: grid;
+    width: min(90vw, 90vh);
+    height: min(90vw, 90vh);
+    grid-template-columns: repeat(15, 6.25vw);
+    grid-template-rows: repeat(15, 6.25vw);
+  }
+  .intersection {
+    background-color: #F4E6BC;
+    border: 0.8px solid #BBA37E;
+    position: relative;
+  }
+  .stone {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }  

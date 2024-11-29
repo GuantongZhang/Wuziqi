@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>五子棋</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pre-game-styles.css">
+</head>
+<body>
+  <div id="preGame">
+    <h1>Choose Your Character</h1>
+    <div class="characters">
+      <button class="character" data-character="Fang">我是坊</button>
+      <button class="character" data-character="Mama">我是妈妈</button>
+      <button class="character" data-character="Cagu">我是CAGU</button>
+    </div>
+    <button id="checkInButton" disabled>Check In</button>
+  </div>
+
+  <div id="game" style="display: none;">
+    <div id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Type your message...">
+    <button id="sendButton">Send</button>
+
+    <div class="game-board" id="gameBoard">
+      <!-- Intersections will be generated dynamically here -->
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/pre-game.js"></script>
+  <script src="js/gomoku.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+#preGame {
+    text-align: center;
+  }
+  
+  .characters {
+    margin-bottom: 20px;
+  }
+  
+  .character {
+    margin: 0 10px;
+  }
+  
+  #checkInButton {
+    margin-top: 20px;
+  }  
